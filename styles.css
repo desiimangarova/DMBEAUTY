@@ -1,0 +1,285 @@
+/* Global Styles */
+body {
+    font-family: "Montserrat";
+  }
+  
+  .container-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: -10;
+  }
+  
+  .row {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #CFB53B;
+    font-weight: bold;
+    text-align: center;
+    width: 100%; /* Add this line to make the row span the full width */
+  }
+  
+  @media (max-width: 767px) {
+    .row {
+      position: static; /* Change position to static for mobile view */
+      transform: none; /* Remove the transform for mobile view */
+      margin-top: 2rem; /* Add some margin on top for mobile view */
+    }
+  }
+  
+  
+  h1 {
+    font-family: "Montserrat-Extra-Bold Italic";
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #CFB53B;
+  }
+  
+  .container-fluid {
+    padding: 0%
+  }
+  
+  .navbar-brand {
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .Welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  h2 {
+    font-family: "OpenSans Italic";
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #CFB53B;
+  }
+  
+  h3 {
+    font-family: "Montserrat Bold";
+    text-align: center;
+    color: #CFB53B;
+  }
+  
+  .table {
+    margin-bottom: 1rem;
+  }
+  
+  #testimonials {
+    padding: 5% 15%;
+    text-align: center;
+  }
+  
+  .card-deck {
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  
+  .card-img-top {
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 200px; /* Adjust the value to set the desired maximum width */
+    height: auto; /* Automatically adjusts the height while maintaining aspect ratio */
+  }
+  
+  .social-icons {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    z-index: 9999;
+  }
+  
+  .social-icons a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+    .container-fluid {
+      padding: 7% 10%;
+    }
+  
+    #testimonials {
+      padding: 5% 10%;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .container-fluid {
+      padding: 3% 5%;
+    }
+  
+    #testimonials {
+      padding: 5% 5%;
+    }
+  }
+  
+  /* Specific Styles for Tables */
+  .table {
+    width: 100%;
+    padding: 3% 15%;
+  }
+  
+  .white-table {
+    background-color: white;
+    color: black;
+    padding: 3% 15%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .black-table {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 3% 15%;
+    align-items: center;
+  }
+  
+  .cell-content {
+    padding: 10px;
+  }
+  
+  .text-input {
+    background-color: black;
+    color: white;
+    padding: 10px 4px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .form-group {
+    width: 30vw;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    padding: 3% 15%;
+    align-items: center;
+  }
+  
+  .bottom-container {
+    background-color: #4a4d55;
+    text-align: center;
+    padding: 3% 15%;
+    align-items: center;
+  }
+
+  .form-control-sm {
+    width: 200px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container-fluid {
+      padding: 0 10px;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .Welcome p {
+      font-size: 12px;
+      margin: 5px 0;
+    }
+  }
+
+  .Welcome p {
+    margin: 10px 0;
+  }
+
+  .Welcome p {
+    font-size: 14px;
+  }
+
+  .video {
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .btn-text-mobile {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .btn-text-desktop {
+      display: none;
+    }
+  }
+
+  /* Add this CSS in your stylesheet or <style> tag */
+
+/* Styles for mobile screens */
+@media only screen and (max-width: 767px) {
+  #ContactUs {
+    display: block;
+    padding: 10px;
+  }
+  
+  table.black-table {
+    width: 100%;
+  }
+  
+  table.black-table thead tr th {
+    display: none;
+  }
+  
+  table.black-table tbody tr td {
+    display: block;
+    width: 100%;
+  }
+  
+  table.black-table tbody tr td img {
+    margin-bottom: 10px;
+  }
+  
+  .cell-content {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .btn.btn-outline-light.btn-md {
+    width: 100%;
+  }
+}
+
+
+
+
+  
+  
